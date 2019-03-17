@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]" parallel="tests">
+  <test name="test1(failed)" parallel="tests">
+    <classes>
+      <class name="com.test.PCFLogin">
+        <methods>
+          <include name="loginPCF"/>
+          <include name="baseurl"/>
+        </methods>
+      </class> <!-- com.test.PCFLogin -->
+    </classes>
+  </test> <!-- test1(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
