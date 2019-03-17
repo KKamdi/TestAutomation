@@ -23,7 +23,7 @@ public class PCFLogin {
 		
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--safebrowsing-disable-download-protection");
-		System.setProperty("webdriver.chrome.driver", "/Users/krutikakamdi/Downloads/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "//chromedriver");
 		driver = new ChromeDriver(options);
 		driver.get(url);
 
