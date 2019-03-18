@@ -41,8 +41,8 @@ public void beforemethod() {
 @BeforeTest
 public void baseurl() {
 	String url = "https://console.run.pivotal.io/";
-	System.setProperty("webdriver.chrome.driver", "/Users/krutikakamdi/Downloads/chromedriver_2");
-	driver = new ChromeDriver();
+	System.setProperty("webdriver.gecko.driver", "/Users/krutikakamdi/Downloads/geckodriver");
+	driver = new FirefoxDriver();
 	driver.get(url);
 }
 	@Test
