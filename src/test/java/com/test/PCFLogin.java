@@ -42,7 +42,7 @@ public void beforemethod() {
 @BeforeTest
 public void baseurl() {
 	String url = "https://console.run.pivotal.io/";
-	System.setProperty("webdriver.gecko.driver", "/Users/krutikakamdi/Downloads/geckodriver");
+	System.setProperty("webdriver.gecko.driver", "D:\geckodriver-v0.24.0-win64");
 	driver = new FirefoxDriver();
 	driver.get(url);
 }
