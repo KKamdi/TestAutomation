@@ -44,6 +44,7 @@ public void baseurl() {
 	String url = "https://console.run.pivotal.io/";
 	System.setProperty("webdriver.gecko.driver", "C:\\Users\\AN0C69474\\Downloads\\geckodriver.exe");
 	driver = new FirefoxDriver();
+	System.out.println("launching browser");
 	driver.get(url);
 }
 	@Test
@@ -55,6 +56,7 @@ public void baseurl() {
 		//Thread.sleep(10000);
 		WebElement txtUsername = driver.findElement(By.xpath("//input[@name='email']"));
 		txtUsername.sendKeys(sUsername);
+		System.out.println("Entered Username");
 		WebElement btnNext = driver.findElement(By.xpath("//div/input[@name='commit']"));
 		
 		btnNext.click();
