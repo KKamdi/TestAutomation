@@ -50,7 +50,8 @@ public void baseurl() {
 	@Test
 	public void loginPCF() throws InterruptedException {
 
-
+		String stitle = driver.getTitle();
+		System.out.println(stitle);
 		String sUsername = "ranimonal@yahoo.co.in";
 		String sPassword = "Khushi@1234M";
 		//Thread.sleep(10000);
